@@ -1,0 +1,255 @@
+/* 
+ *  Document   : style
+ *  Created on : 11 août 2012, 22:43:35
+ *  Author     : mickael
+ *  Description:
+ *      Purpose of the stylesheet follows.
+
+.body
+  background-image: linear-gradient(left bottom, rgb(83, 99, 84) 15%, rgb(109, 128, 158) 50%, rgb(73, 112, 112) 80%)
+  background-image: -o-linear-gradient(left bottom, rgb(83, 99, 84) 15%, rgb(109, 128, 158) 50%, rgb(73, 112, 112) 80%)
+  background-image: -moz-linear-gradient(left bottom, rgb(83, 99, 84) 15%, rgb(109, 128, 158) 50%, rgb(73, 112, 112) 80%)
+  background-image: -webkit-linear-gradient(left bottom, rgb(83, 99, 84) 15%, rgb(109, 128, 158) 50%, rgb(73, 112, 112) 80%)
+  background-image: -ms-linear-gradient(left bottom, rgb(83, 99, 84) 15%, rgb(109, 128, 158) 50%, rgb(73, 112, 112) 80%)
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0.15, rgb(83, 99, 84)), color-stop(0.5, rgb(109, 128, 158)), color-stop(0.8, rgb(73, 112, 112)))
+  background-attachment: fixed
+  font-family: "Century Gothic",Arial,Helvetica,FreeSans,sans-serif
+  font-size: 14px
+  font-size: 1em
+  line-height: 1.6
+  color: #fff
+
+a
+  color: #fff
+  text-decoration: none
+  display: inline-block
+  border-bottom: 1px dotted transparent
+  &:hover
+    border-bottom: 1px dotted #fff
+    color: #fff
+  &:active, &:visited
+    color: #fff
+
+.left
+  float: left
+
+.right
+  float: right
+
+.mglft20
+  margin-left: 20px
+
+.mgbt40
+  margin-bottom: 40px
+
+.pdlft20
+  padding-left: 20px
+
+.pdbt40
+  padding-bottom: 40px
+
+.pdtp20
+  padding-top: 20px
+
+.mgtp140
+  margin-top: 140px
+
+.mgrt20
+  margin-right: 20px
+
+.w40
+  width: 40%
+
+.w50
+  width: 50%
+
+.w60
+  width: 60%
+
+.w70
+  width: 70%
+
+.w100
+  width: 100%
+
+.bl
+  display: block
+
+.ilbl
+  display: inline-block
+
+.il
+  display: inline
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+  font-family: 'Amaranth',"Lucida Grande",Tahoma,"Trebuchet MS",Helvetica,sans-serif
+  color: #000
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3)
+
+h1, .h1
+  font-size: 2.2em
+  line-height: 0.8
+  color: #fff
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+
+h2, .h2
+  font-size: 1.8em
+  line-height: 0.8
+
+h3!, .h3!, h4!, .h4!, h5!, .h5!, h6!, .h6!
+
+footer
+  z-index: 10
+
+/* design des listes
+
+.list-none
+  list-style-type: none
+
+/* tabs en css3
+
+.tabs
+  position: relative
+  input
+    position: absolute
+    z-index: 1000
+    width: 120px
+    height: 40px
+    left: 0px
+    top: 0px
+    opacity: 0
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    filter: alpha(opacity = 0)
+    cursor: pointer
+    &#tab-2
+      left: 120px
+    &#tab-3
+      left: 240px
+  label
+    font-size: 15px
+    line-height: 40px
+    height: 150px
+    position: relative
+    padding: 0 20px
+    float: left
+    display: block
+    width: 150px
+    &:after
+      color: transparent
+      content: ''
+      position: absolute
+      bottom: -2px
+      left: 0
+      width: 100%
+      height: 2px
+      display: block
+    &:first-of-type
+      z-index: 4
+
+.tab-label-2
+  z-index: 3
+
+.tab-label-3
+  z-index: 2
+
+.tabs input:checked + label
+  z-index: 6
+
+.clear-shadow
+  clear: both
+
+.content
+  position: relative
+  width: 100%
+  height: 370px
+  z-index: 5
+  article
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    opacity: 0
+    -webkit-transition: opacity linear 0.1s
+    -moz-transition: opacity linear 0.1s
+    -o-transition: opacity linear 0.1s
+    -ms-transition: opacity linear 0.1s
+    transition: opacity linear 0.1s
+
+.tabs input
+  &.tab-selector-1:checked ~ .content .content-1, &.tab-selector-2:checked ~ .content .content-2, &.tab-selector-3:checked ~ .content .content-3
+    z-index: 100
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    filter: alpha(opacity = 100)
+    opacity: 1
+    -webkit-transition: opacity ease-out 0.2s 0.1s
+    -moz-transition: opacity ease-out 0.2s 0.1s
+    -o-transition: opacity ease-out 0.2s 0.1s
+    -ms-transition: opacity ease-out 0.2s 0.1s
+    transition: opacity ease-out 0.2s 0.1s
+
+/* barre latérale gauche
+
+.aside
+  .intro
+    padding-left: 20px
+  .plan
+    padding-left: 20px
+    position: relative
+    margin-top: 40%
+
+/* séparation
+
+.hr
+  height: 0px
+  border: 2px solid rgba(255, 255, 255, 0.7)
+
+/* tests
+
+.hexagon
+  overflow: hidden
+  visibility: hidden
+  -webkit-transform: rotate(120deg)
+  -moz-transform: rotate(120deg)
+  -o-transform: rotate(120deg)
+  transform: rotate(120deg)
+  cursor: pointer
+
+.hexagon-in1
+  overflow: hidden
+  width: 100%
+  height: 100%
+  -webkit-transform: rotate(-60deg)
+  -moz-transform: rotate(-60deg)
+  -o-transform: rotate(-60deg)
+  transform: rotate(-60deg)
+
+.hexagon-in2
+  width: 100%
+  height: 100%
+  background-repeat: no-repeat
+  background-position: 50%
+  background-image: url(http://placekitten.com/240/240)
+  visibility: visible
+  -webkit-transform: rotate(-60deg)
+  -moz-transform: rotate(-60deg)
+  -o-transform: rotate(-60deg)
+  transform: rotate(-60deg)
+  &:hover
+    background-image: url(http://placekitten.com/241/241)
+
+.hexagon1
+  width: 100px
+  height: 50px
+  margin: 0 0 0 -20px
+
+.hexagon2
+  width: 150px
+  height: 300px
+  margin: -60px 0 0 15px
+
+/* ressources
+
+.content-2 div
+  width: 33%
+  display: table-cell

@@ -1,10 +1,6 @@
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 
-AmUserBundle:
-    resource: "@AmUserBundle/Controller"
-    type:     annotation
-
 AmPresenceBundle:
     resource: "@AmPresenceBundle/Controller"
     type:     annotation
